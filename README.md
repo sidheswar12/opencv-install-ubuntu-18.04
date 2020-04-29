@@ -1,9 +1,16 @@
+Author: Sidheswar Ghosh
 # opencv-install-ubuntu-18.04
 OpenCV installation on Ubuntu 18.04 for C++ and python. 
 
-Steps-1: Download/clone the repository
-git clone
+## Step-1: Download/clone the repository
+$ git clone git@github.com:sidheswar12/opencv-install-ubuntu-18.04.git
+$ cd opencv-install-ubuntu-18.04
+$ sudo chmod 777 install_opencv.sh
+$ ./install_opencv.sh
 
-# Compile cpp file to check the opencv CPP properly install or not:
-## $ g++ main.cpp -o output `pkg-config --cflags --libs opencv`
-## $ ./output
+## Step-2: Check opencv CPP properly install or not with main.cpp file
+$ g++ main.cpp -o output `pkg-config --cflags --libs opencv`
+$ ./output
+
+## Step-3: Check opencv python properly install or not with main.py file
+$ python3 main.py

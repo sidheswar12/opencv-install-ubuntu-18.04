@@ -1,13 +1,14 @@
 #include <opencv2/highgui.hpp>
 #include <iostream>
  
-int main( int argc, char** argv ) {
+int main( int argc, char** argv ) 
+{
   
   cv::Mat image;
   image = cv::imread("leena.jpg" , CV_LOAD_IMAGE_COLOR);
   
   if(! image.data ) {
-      std::cout <<  "Could not open or find the image" << std::endl ;
+      std::cout <<  "Could not open or find the image" << std::endl;
       return -1;
     }
   
