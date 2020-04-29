@@ -5,7 +5,7 @@ int main( int argc, char** argv )
 {
   
   cv::Mat image;
-  image = cv::imread("leena.jpg" , CV_LOAD_IMAGE_COLOR);
+  image = cv::imread("lena.jpg" , CV_LOAD_IMAGE_COLOR);
   
   if(! image.data ) {
       std::cout <<  "Could not open or find the image" << std::endl;

@@ -6,7 +6,7 @@ import cv2 as cv
 
 def main():
     print(cv.__version__)
-    image = cv.imread("leena.jpg" , 1)
+    image = cv.imread("lena.jpg" , 1)
         
     cv.imshow('image',image)
     cv.waitKey(0)    
